@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BAEDEF8C1B8EE942009CEBA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEF8B1B8EE942009CEBA8 /* main.m */; };
-		BAEDEF8F1B8EE942009CEBA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEF8E1B8EE942009CEBA8 /* AppDelegate.m */; };
-		BAEDEF921B8EE942009CEBA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEF911B8EE942009CEBA8 /* ViewController.m */; };
 		BAEDEF951B8EE942009CEBA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEDEF931B8EE942009CEBA8 /* Main.storyboard */; };
 		BAEDEF971B8EE942009CEBA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEDEF961B8EE942009CEBA8 /* Images.xcassets */; };
 		BAEDEF9A1B8EE942009CEBA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAEDEF981B8EE942009CEBA8 /* LaunchScreen.xib */; };
 		BAEDEFA61B8EE942009CEBA8 /* WYNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEFA51B8EE942009CEBA8 /* WYNewsTests.m */; };
+		BAEDEFB71B8EEC65009CEBA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEFB41B8EEC65009CEBA8 /* AppDelegate.m */; };
+		BAEDEFB81B8EEC65009CEBA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEFB51B8EEC65009CEBA8 /* main.m */; };
+		BAEDEFBB1B8EECC2009CEBA8 /* WYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEFBA1B8EECC2009CEBA8 /* WYMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,17 +29,17 @@
 /* Begin PBXFileReference section */
 		BAEDEF861B8EE942009CEBA8 /* WYNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEDEF8A1B8EE942009CEBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAEDEF8B1B8EE942009CEBA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BAEDEF8D1B8EE942009CEBA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BAEDEF8E1B8EE942009CEBA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BAEDEF901B8EE942009CEBA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BAEDEF911B8EE942009CEBA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BAEDEF941B8EE942009CEBA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAEDEF961B8EE942009CEBA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BAEDEF991B8EE942009CEBA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BAEDEF9F1B8EE942009CEBA8 /* WYNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEDEFA41B8EE942009CEBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAEDEFA51B8EE942009CEBA8 /* WYNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsTests.m; sourceTree = "<group>"; };
+		BAEDEFB31B8EEC65009CEBA8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAEDEFB41B8EEC65009CEBA8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAEDEFB51B8EEC65009CEBA8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAEDEFB91B8EECC2009CEBA8 /* WYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYMainViewController.h; sourceTree = "<group>"; };
+		BAEDEFBA1B8EECC2009CEBA8 /* WYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +81,7 @@
 		BAEDEF881B8EE942009CEBA8 /* WYNews */ = {
 			isa = PBXGroup;
 			children = (
-				BAEDEF8D1B8EE942009CEBA8 /* AppDelegate.h */,
-				BAEDEF8E1B8EE942009CEBA8 /* AppDelegate.m */,
-				BAEDEF901B8EE942009CEBA8 /* ViewController.h */,
-				BAEDEF911B8EE942009CEBA8 /* ViewController.m */,
-				BAEDEF931B8EE942009CEBA8 /* Main.storyboard */,
-				BAEDEF961B8EE942009CEBA8 /* Images.xcassets */,
-				BAEDEF981B8EE942009CEBA8 /* LaunchScreen.xib */,
+				BAEDEFAF1B8EEC65009CEBA8 /* Classes */,
 				BAEDEF891B8EE942009CEBA8 /* Supporting Files */,
 			);
 			path = WYNews;
@@ -96,8 +90,10 @@
 		BAEDEF891B8EE942009CEBA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BAEDEF931B8EE942009CEBA8 /* Main.storyboard */,
+				BAEDEF961B8EE942009CEBA8 /* Images.xcassets */,
+				BAEDEF981B8EE942009CEBA8 /* LaunchScreen.xib */,
 				BAEDEF8A1B8EE942009CEBA8 /* Info.plist */,
-				BAEDEF8B1B8EE942009CEBA8 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +113,50 @@
 				BAEDEFA41B8EE942009CEBA8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAEDEFAF1B8EEC65009CEBA8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BAEDEFB21B8EEC65009CEBA8 /* Others */,
+				BAEDEFB11B8EEC65009CEBA8 /* Model */,
+				BAEDEFB61B8EEC65009CEBA8 /* View */,
+				BAEDEFB01B8EEC65009CEBA8 /* Controller */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BAEDEFB01B8EEC65009CEBA8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BAEDEFB91B8EECC2009CEBA8 /* WYMainViewController.h */,
+				BAEDEFBA1B8EECC2009CEBA8 /* WYMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BAEDEFB11B8EEC65009CEBA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAEDEFB21B8EEC65009CEBA8 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				BAEDEFB31B8EEC65009CEBA8 /* AppDelegate.h */,
+				BAEDEFB41B8EEC65009CEBA8 /* AppDelegate.m */,
+				BAEDEFB51B8EEC65009CEBA8 /* main.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		BAEDEFB61B8EEC65009CEBA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +203,7 @@
 		BAEDEF7E1B8EE942009CEBA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WY;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = yanyin;
 				TargetAttributes = {
@@ -219,9 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAEDEF921B8EE942009CEBA8 /* ViewController.m in Sources */,
-				BAEDEF8F1B8EE942009CEBA8 /* AppDelegate.m in Sources */,
-				BAEDEF8C1B8EE942009CEBA8 /* main.m in Sources */,
+				BAEDEFBB1B8EECC2009CEBA8 /* WYMainViewController.m in Sources */,
+				BAEDEFB81B8EEC65009CEBA8 /* main.m in Sources */,
+				BAEDEFB71B8EEC65009CEBA8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +457,7 @@
 				BAEDEFAB1B8EE942009CEBA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAEDEFAC1B8EE942009CEBA8 /* Build configuration list for PBXNativeTarget "WYNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +466,7 @@
 				BAEDEFAE1B8EE942009CEBA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

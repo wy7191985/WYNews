@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WYMainViewController.h
 //  WYNews
 //
 //  Created by yanyin on 15/8/27.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WYMainViewController : UIViewController
 
 @end
-
