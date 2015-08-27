@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		BAEDEF951B8EE942009CEBA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAEDEF931B8EE942009CEBA8 /* Main.storyboard */; };
 		BAEDEF971B8EE942009CEBA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEDEF961B8EE942009CEBA8 /* Images.xcassets */; };
-		BAEDEF9A1B8EE942009CEBA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAEDEF981B8EE942009CEBA8 /* LaunchScreen.xib */; };
 		BAEDEFA61B8EE942009CEBA8 /* WYNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEFA51B8EE942009CEBA8 /* WYNewsTests.m */; };
 		BAEDEFB71B8EEC65009CEBA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEFB41B8EEC65009CEBA8 /* AppDelegate.m */; };
 		BAEDEFB81B8EEC65009CEBA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEFB51B8EEC65009CEBA8 /* main.m */; };
 		BAEDEFBB1B8EECC2009CEBA8 /* WYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEFBA1B8EECC2009CEBA8 /* WYMainViewController.m */; };
+		BAEDEFBD1B8EF94A009CEBA8 /* sidebar_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAEDEFBC1B8EF94A009CEBA8 /* sidebar_bg@2x.jpg */; };
+		BAEDEFC01B8EFC78009CEBA8 /* WYLeftMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEFBF1B8EFC78009CEBA8 /* WYLeftMenu.m */; };
+		BAEDEFC41B8F00A5009CEBA8 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEDEFC31B8F00A5009CEBA8 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,6 @@
 		BAEDEF8A1B8EE942009CEBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAEDEF941B8EE942009CEBA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAEDEF961B8EE942009CEBA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BAEDEF991B8EE942009CEBA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BAEDEF9F1B8EE942009CEBA8 /* WYNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEDEFA41B8EE942009CEBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAEDEFA51B8EE942009CEBA8 /* WYNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYNewsTests.m; sourceTree = "<group>"; };
@@ -40,6 +41,12 @@
 		BAEDEFB51B8EEC65009CEBA8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAEDEFB91B8EECC2009CEBA8 /* WYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYMainViewController.h; sourceTree = "<group>"; };
 		BAEDEFBA1B8EECC2009CEBA8 /* WYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYMainViewController.m; sourceTree = "<group>"; };
+		BAEDEFBC1B8EF94A009CEBA8 /* sidebar_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sidebar_bg@2x.jpg"; sourceTree = "<group>"; };
+		BAEDEFBE1B8EFC78009CEBA8 /* WYLeftMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLeftMenu.h; sourceTree = "<group>"; };
+		BAEDEFBF1B8EFC78009CEBA8 /* WYLeftMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLeftMenu.m; sourceTree = "<group>"; };
+		BAEDEFC21B8F00A5009CEBA8 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		BAEDEFC31B8F00A5009CEBA8 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		BAEDEFC51B8F00D7009CEBA8 /* WYNews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WYNews-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +97,11 @@
 		BAEDEF891B8EE942009CEBA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BAEDEFBC1B8EF94A009CEBA8 /* sidebar_bg@2x.jpg */,
 				BAEDEF931B8EE942009CEBA8 /* Main.storyboard */,
 				BAEDEF961B8EE942009CEBA8 /* Images.xcassets */,
-				BAEDEF981B8EE942009CEBA8 /* LaunchScreen.xib */,
 				BAEDEF8A1B8EE942009CEBA8 /* Info.plist */,
+				BAEDEFC51B8F00D7009CEBA8 /* WYNews-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				BAEDEFB21B8EEC65009CEBA8 /* Others */,
+				BAEDEFC11B8F0095009CEBA8 /* Category */,
 				BAEDEFB11B8EEC65009CEBA8 /* Model */,
 				BAEDEFB61B8EEC65009CEBA8 /* View */,
 				BAEDEFB01B8EEC65009CEBA8 /* Controller */,
@@ -155,8 +164,19 @@
 		BAEDEFB61B8EEC65009CEBA8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BAEDEFBE1B8EFC78009CEBA8 /* WYLeftMenu.h */,
+				BAEDEFBF1B8EFC78009CEBA8 /* WYLeftMenu.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BAEDEFC11B8F0095009CEBA8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BAEDEFC21B8F00A5009CEBA8 /* UIView+Extension.h */,
+				BAEDEFC31B8F00A5009CEBA8 /* UIView+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +260,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAEDEFBD1B8EF94A009CEBA8 /* sidebar_bg@2x.jpg in Resources */,
 				BAEDEF951B8EE942009CEBA8 /* Main.storyboard in Resources */,
-				BAEDEF9A1B8EE942009CEBA8 /* LaunchScreen.xib in Resources */,
 				BAEDEF971B8EE942009CEBA8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAEDEFC41B8F00A5009CEBA8 /* UIView+Extension.m in Sources */,
 				BAEDEFBB1B8EECC2009CEBA8 /* WYMainViewController.m in Sources */,
 				BAEDEFB81B8EEC65009CEBA8 /* main.m in Sources */,
 				BAEDEFB71B8EEC65009CEBA8 /* AppDelegate.m in Sources */,
+				BAEDEFC01B8EFC78009CEBA8 /* WYLeftMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,14 +313,6 @@
 				BAEDEF941B8EE942009CEBA8 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BAEDEF981B8EE942009CEBA8 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAEDEF991B8EE942009CEBA8 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -388,6 +402,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WYNews/WYNews-Prefix.pch";
 				INFOPLIST_FILE = WYNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -398,6 +415,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WYNews/WYNews-Prefix.pch";
 				INFOPLIST_FILE = WYNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
