@@ -32,6 +32,14 @@
     UIButton *button = [[UIButton alloc] init];
     [button setTitle:title forState:UIControlStateNormal];
     [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    //设置内容靠左
+    button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    //设置内边距
+    button.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+    button.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 0);
+    
+    
+    
     [self addSubview:button];
     
 }
