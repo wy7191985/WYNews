@@ -64,7 +64,10 @@
         
     }
 }
-
+- (void)imageViewWithColor:(UIColor *)color
+{
+    
+}
 
 
 
