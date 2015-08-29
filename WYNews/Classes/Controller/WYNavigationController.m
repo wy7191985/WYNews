@@ -7,6 +7,7 @@
 //
 
 #import "WYNavigationController.h"
+#import "WYNavigationBar.h"
 
 @interface WYNavigationController ()
 
@@ -16,7 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // 创建自定义的导航栏
+    WYNavigationBar *navBar = [[WYNavigationBar alloc] init];
+    [self setValue:navBar forKeyPath:@"navigationBar"];
 }
 
 /**

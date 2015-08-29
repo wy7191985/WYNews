@@ -55,9 +55,17 @@
     WYTitleView *titleView = [[WYTitleView alloc] init];
     titleView.title = @"新闻";
     vc.navigationItem.titleView = titleView;
+    // 添加左右按钮
+    vc.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageNamed:@"top_navigation_menuicon" target:self action:@selector(leftBtnClick)];
+    vc.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageNamed:@"top_navigation_infoicon" target:self action:@selector(rightBtnClick)];
+}
+
+- (void)leftBtnClick
+{
     
-    
-    
+}
+- (void)rightBtnClick
+{
     
 }
 @end

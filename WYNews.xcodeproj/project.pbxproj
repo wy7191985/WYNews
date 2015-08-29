@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		895775271B91F216009297B4 /* WYNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 895775261B91F216009297B4 /* WYNavigationBar.m */; };
 		89AEF9061B91E1F200796265 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEF9051B91E1F200796265 /* UIImage+Extension.m */; };
 		89AEF9091B91E65300796265 /* WYLeftMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEF9081B91E65300796265 /* WYLeftMenuButton.m */; };
 		89AEF90C1B91E9AA00796265 /* WYTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEF90B1B91E9AA00796265 /* WYTitleView.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		895775251B91F216009297B4 /* WYNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNavigationBar.h; sourceTree = "<group>"; };
+		895775261B91F216009297B4 /* WYNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNavigationBar.m; sourceTree = "<group>"; };
 		89AEF9041B91E1F200796265 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		89AEF9051B91E1F200796265 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		89AEF9071B91E65300796265 /* WYLeftMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLeftMenuButton.h; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 				89AEF9081B91E65300796265 /* WYLeftMenuButton.m */,
 				89AEF90A1B91E9AA00796265 /* WYTitleView.h */,
 				89AEF90B1B91E9AA00796265 /* WYTitleView.m */,
+				895775251B91F216009297B4 /* WYNavigationBar.h */,
+				895775261B91F216009297B4 /* WYNavigationBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAEDEFC41B8F00A5009CEBA8 /* UIView+Extension.m in Sources */,
+				895775271B91F216009297B4 /* WYNavigationBar.m in Sources */,
 				BAEDEFBB1B8EECC2009CEBA8 /* WYMainViewController.m in Sources */,
 				BAEDEFB81B8EEC65009CEBA8 /* main.m in Sources */,
 				BA1F3BCD1B9004E100B6FDA0 /* WYNewsViewController.m in Sources */,
