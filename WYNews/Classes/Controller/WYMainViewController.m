@@ -10,6 +10,7 @@
 #import "WYLeftMenu.h"
 #import "WYNavigationController.h"
 #import "WYNewsViewController.h"
+#import "WYTitleView.h"
 
 @interface WYMainViewController ()
 
@@ -22,7 +23,7 @@
     // 1.添加左边菜单
     [self setupLeftMenu];
     // 2.添加子控制器
-//    [self setupChildVc];
+    [self setupChildVc];
 }
 /**
  *  设置状态栏风格(白色)
@@ -51,14 +52,9 @@
     [self.view addSubview:nav.view];
     [self addChildViewController:nav];
     // 添加标题
-    UIButton *button = [[UIButton alloc] init];
-    [button setTitle:@"新闻" forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"navbar_netease"] forState:UIControlStateNormal];
-    button.width = 300;
-    button.height = 30;
-    button.userInteractionEnabled = NO;
-    vc.navigationItem.titleView = button;
+    WYTitleView *titleView = [[WYTitleView alloc] init];
+    titleView.title = @"新闻";
+    vc.navigationItem.titleView = titleView;
     
     
     
