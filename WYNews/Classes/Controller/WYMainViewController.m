@@ -22,7 +22,14 @@
     // 1.添加左边菜单
     [self setupLeftMenu];
     // 2.添加子控制器
-    [self setupChildVc];
+//    [self setupChildVc];
+}
+/**
+ *  设置状态栏风格(白色)
+ */
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 /**
  *  添加左边菜单
@@ -30,7 +37,7 @@
 - (void)setupLeftMenu
 {
     WYLeftMenu *leftMenu = [[WYLeftMenu alloc] init];
-    leftMenu.backgroundColor = [UIColor redColor];
+//    leftMenu.backgroundColor = [UIColor redColor];
     leftMenu.frame = CGRectMake(0, 50, 150, 300);
     [self.view addSubview:leftMenu];
 }
