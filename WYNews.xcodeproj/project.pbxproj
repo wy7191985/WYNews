@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		895775271B91F216009297B4 /* WYNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 895775261B91F216009297B4 /* WYNavigationBar.m */; };
 		8957752A1B921431009297B4 /* WYReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 895775291B921431009297B4 /* WYReadingViewController.m */; };
+		896A9DCF1B9351F700E897C6 /* WYAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 896A9DCE1B9351F700E897C6 /* WYAdViewController.m */; };
 		89AEF9061B91E1F200796265 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEF9051B91E1F200796265 /* UIImage+Extension.m */; };
 		89AEF9091B91E65300796265 /* WYLeftMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEF9081B91E65300796265 /* WYLeftMenuButton.m */; };
 		89AEF90C1B91E9AA00796265 /* WYTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AEF90B1B91E9AA00796265 /* WYTitleView.m */; };
@@ -41,6 +42,8 @@
 		895775261B91F216009297B4 /* WYNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYNavigationBar.m; sourceTree = "<group>"; };
 		895775281B921431009297B4 /* WYReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYReadingViewController.h; sourceTree = "<group>"; };
 		895775291B921431009297B4 /* WYReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYReadingViewController.m; sourceTree = "<group>"; };
+		896A9DCD1B9351F700E897C6 /* WYAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAdViewController.h; sourceTree = "<group>"; };
+		896A9DCE1B9351F700E897C6 /* WYAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAdViewController.m; sourceTree = "<group>"; };
 		89AEF9041B91E1F200796265 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		89AEF9051B91E1F200796265 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		89AEF9071B91E65300796265 /* WYLeftMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLeftMenuButton.h; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 				BA1F3BCC1B9004E100B6FDA0 /* WYNewsViewController.m */,
 				895775281B921431009297B4 /* WYReadingViewController.h */,
 				895775291B921431009297B4 /* WYReadingViewController.m */,
+				896A9DCD1B9351F700E897C6 /* WYAdViewController.h */,
+				896A9DCE1B9351F700E897C6 /* WYAdViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,6 +338,7 @@
 				BAEDEFC01B8EFC78009CEBA8 /* WYLeftMenu.m in Sources */,
 				89AEF9091B91E65300796265 /* WYLeftMenuButton.m in Sources */,
 				BA1F3BCA1B9004B300B6FDA0 /* WYNavigationController.m in Sources */,
+				896A9DCF1B9351F700E897C6 /* WYAdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
