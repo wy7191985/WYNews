@@ -67,6 +67,18 @@
     //添加订阅
     WYReadingViewController *readVc = [[WYReadingViewController alloc] init];
     [self setupVc:readVc title:@"订阅"];
+    UIViewController *photoVc = [[UIViewController alloc] init];
+    photoVc.view.backgroundColor = WYRandomColor;
+    [self setupVc:photoVc title:@"图片"];
+    UIViewController *videoVc = [[UIViewController alloc] init];
+    videoVc.view.backgroundColor = WYRandomColor;
+    [self setupVc:videoVc title:@"视频"];
+    UIViewController *commentVc = [[UIViewController alloc] init];
+    commentVc.view.backgroundColor = WYRandomColor;
+    [self setupVc:commentVc title:@"跟贴"];
+    UIViewController *radioVc = [[UIViewController alloc] init];
+    radioVc.view.backgroundColor = WYRandomColor;
+    [self setupVc:radioVc title:@"电台"];
 }
 
 /**
@@ -126,7 +138,7 @@
             // 给缩放的控制器添加遮盖
             UIButton *cover = [[UIButton alloc] init];
             cover.frame = showingView.bounds;
-            cover.backgroundColor = [UIColor redColor];
+//            cover.backgroundColor = [UIColor redColor];
             cover.tag = WYCoverTag;
             [showingView addSubview:cover];
             //添加点击事件
@@ -168,9 +180,15 @@
     [self.view addSubview:newNav.view];
     // 3.设置新控制的transform跟旧控制器一样
     newNav.view.transform = oldNav.view.transform;
-    // 4.设置当前现实的导航栏控制器
+    // 4.设置当前显示的导航栏控制器
     self.showingNavigationController = newNav;
     // 5.新的控制器重置transform(相当于点击了遮盖)
     [self coverClick:(UIButton *)[newNav.view viewWithTag:WYCoverTag]];
+    // 6.给缩放的控制器view添加阴影
+    newNav.view.layer.shadowColor = [UIColor blackColor].CGColor;
+    newNav.view.layer.shadowOffset = CGSizeMake(-2, 0);
+    newNav.view.layer.shadowOpacity = 0.5;
+    
+    
 }
 @end
