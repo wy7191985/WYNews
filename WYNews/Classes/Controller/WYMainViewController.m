@@ -12,18 +12,30 @@
 #import "WYNewsViewController.h"
 #import "WYReadingViewController.h"
 #import "WYTitleView.h"
+#import "WYRightMenuController.h"
+
 
 #define WYLeftMenuY 50
 #define WYLeftMenuW 150
 #define WYLeftMenuH 300
 #define WYCoverTag 222
 
+#define WYRightMenuW 250
+
+
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+
 @interface WYMainViewController () <WYLeftMenuDelegate>
 
 /** 正在显示的导航栏控制器 */
 @property (nonatomic, strong) UINavigationController *showingNavigationController;
 
+/** 右边菜单控制器 */
+@property (nonatomic, strong) WYRightMenuController *rightMenuVc;
 
+/** 左菜单 */
+@property (nonatomic, weak) WYLeftMenu *leftMenu;
 
 @end
 
@@ -35,6 +47,8 @@
     [self setupChildVc];
     // 2.添加左边菜单
     [self setupLeftMenu];
+    // 3.添加右边菜单
+    [self setupRightMenu];
     
 }
 /**
@@ -43,6 +57,17 @@
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
+}
+/**
+ *  添加右边菜单
+ */
+- (void)setupRightMenu
+{
+    
+    self.rightMenuVc = [[WYRightMenuController alloc] init];
+    self.rightMenuVc.view.frame = CGRectMake(ScreenW - WYRightMenuW, 0, WYRightMenuW, ScreenH);
+    [self addChildViewController:self.rightMenuVc];
+    [self.view insertSubview:self.rightMenuVc.view atIndex:1];
 }
 /**
  *  添加左边菜单
@@ -55,6 +80,7 @@
     leftMenu.delegate = self;
     leftMenu.frame = CGRectMake(0, WYLeftMenuY, WYLeftMenuW, WYLeftMenuH);
     [self.view insertSubview:leftMenu atIndex:1];
+    self.leftMenu = leftMenu;
 }
 /**
  *  添加子控制器
@@ -105,11 +131,13 @@
  */
 - (void)leftBtnClick
 {
+    // 隐藏右边菜单,显示左菜单
+    self.rightMenuVc.view.hidden = YES;
+    self.leftMenu.hidden = NO;
+    
     //取出当前现实的控制器view
     UIView *showingView = self.showingNavigationController.view;
     
-    CGFloat ScreenW = [UIScreen mainScreen].bounds.size.width;
-    CGFloat ScreenH = [UIScreen mainScreen].bounds.size.height;
     // 1.计算缩放比例
     //缩放后控制器View的高
     CGFloat navH = ScreenH - WYLeftMenuY * 2;
@@ -163,9 +191,57 @@
         [cover removeFromSuperview];
     }];
 }
-
+/**
+ *  点击了右边按钮
+ */
 - (void)rightBtnClick
 {
+    // 显示右边菜单,隐藏左菜单
+    self.rightMenuVc.view.hidden = NO;
+    self.leftMenu.hidden = YES;
+    // 展示登录按钮动画效果
+    [self.rightMenuVc didShow];
+    
+    
+    //取出当前现实的控制器view
+    UIView *showingView = self.showingNavigationController.view;
+    
+    // 1.计算缩放比例
+    //缩放后控制器View的高
+    CGFloat navH = ScreenH - WYLeftMenuY * 2;
+    //缩放比例
+    CGFloat scale = navH / ScreenH;
+    // 2.计算平移的距离
+    //先缩放控制器View到中间两边空出的间距
+    CGFloat rightMargin = (ScreenW - (ScreenW * scale)) / 2;
+    //向右平移的距离
+    CGFloat translateX = WYRightMenuW - rightMargin;
+    //顶部空出的距离
+    CGFloat topMargin = (ScreenH - (ScreenH * scale)) / 2;
+    //向下平移的距离
+    CGFloat translateY = WYLeftMenuY - topMargin;
+    
+    // 3.缩放
+    CGAffineTransform scaleform = CGAffineTransformMakeScale(scale, scale);
+    // 4.右移(平移属性被乘上了缩放属性,所以要除回来 )
+    CGAffineTransform translateform = CGAffineTransformTranslate(scaleform, - translateX / scale, translateY / scale);
+    
+    
+    if (CGAffineTransformIsIdentity(showingView.transform)) { //是否为单倍矩阵
+        [UIView animateWithDuration:0.25 animations:^{
+            showingView.transform = translateform;
+        } completion:^(BOOL finished) {
+            // 给缩放的控制器添加遮盖
+            UIButton *cover = [[UIButton alloc] init];
+            cover.frame = showingView.bounds;
+            //            cover.backgroundColor = [UIColor redColor];
+            cover.tag = WYCoverTag;
+            [showingView addSubview:cover];
+            //添加点击事件
+            [cover addTarget:self action:@selector(coverClick:) forControlEvents:UIControlEventTouchUpInside];
+            
+        }];
+    }
     
 }
 
